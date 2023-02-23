@@ -1,0 +1,92 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.card{
+
+}
+
+.card__title{
+
+}
+
+.card__paragraph{
+
+}
+ */
+
+ /*------------Media queries----------------------*/
+
+/* .square {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  margin: 0 auto;
+}
+/* 
+Caundosean 768px cambia los valores
+ >= 768px va cumplir*/ 
+
+ /* @media (min-width: 768px) {
+  .square {
+    background-color: red;
+  }
+}
+@media (min-width: 1024px) and (orientation: landscape) {
+  .square {
+    background-color: purple;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .square {
+  }
+}
+
+@media print {
+  .square {
+    width: 250px;
+    background-color: crimson;
+  }
+}   */ 
+
+/*Cuando de aplica max with se aplica de <= a el valor de px determinado*/
+
+/*-----------------------------------
+Flexbox-------------------------*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.flex-container{
+    width: 600px;
+    max-width: 800px;
+    height: 600px;
+    margin: 80px auto;
+    outline: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+}
+
+.flex-item:nth-child(even){
+  background-color: crimson;
+
+}
+
+.flex-item:nth-child(odd){
+  background-color: blue;
+}

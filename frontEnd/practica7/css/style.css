@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 50px auto;
+}
+
+.container__sedans-card{
+    background-color: hsl(31, 77%, 52%);
+    padding: 25px 24px;
+    color: hsl(0, 0%, 95%);
+    border-radius: 8px 8px 0px 0px;
+}
+
+.container__suvs-card{
+    background-color: hsl(184, 100%, 22%);
+    padding: 25px 24px;
+    color: hsl(0, 0%, 95%);
+}
+
+.container__luxury-card{
+    background-color: hsl(179, 100%, 13%);
+    padding: 25px 24px;
+    color: hsl(0, 0%, 95%);
+    border-radius: 0px 0px 8px 8px;
+}
+
+h1{
+    font-family: "Big Shoulders Display";
+    margin: 15px 0px;
+}
+
+p{
+    font-family: "Lexend Deca";
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 12px;
+    width: 50%;
+    height: 20px;
+    margin: 15px 0px;
+    border: none;
+    mix-blend-mode: screen;
+    font-size: 8px;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+@media(min-width: 768px){
+    .container{
+        margin-top: 10%;
+        flex-direction: row;
+        justify-content: center;
+        width: 600px;
+        padding-bottom: 10px;
+    }
+
+    .container__sedans-card{
+        border-radius: 0px;
+    }
+    
+    .container__luxury-card{
+        border-radius: 0px;
+    }
+
+    p{
+        margin-bottom: 40px;
+    }
+    
+    button{
+        margin-bottom: 2px;
+        height: 24px;
+        font-size: 10px;
+    }
+ 
+}
